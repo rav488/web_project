@@ -1,0 +1,270 @@
+:root{
+
+    --newmsg-color:red;
+    --selected-user-Bg:yellowgreen;
+    --online-user-color:black;
+    --offline-user-color:#555;
+    --text-incont-color: white;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--background-color);
+    height: 900px;
+}
+
+#cont{
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+    height: 80%;
+    border: 2px solid var(--border-color);
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px var(--border-color);
+    background-color: var(--background-container-color);
+    padding-bottom: 20px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+#logo{
+    width: 80px;
+    margin-left: -50px;
+    margin-top: -46px;
+    transform: rotate(-30deg);
+    position: absolute;
+    z-index: 1;
+
+}
+#nickscr{
+    color: var(--text-incont-color);
+    width: 90%;
+    margin-top: 10px;
+    margin-left: -30px;
+    text-align: center;
+}
+#nickscr #settings{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1;
+}
+#nickscr #logout{
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    z-index: 1;
+    width: 60px;
+    height: 24px;
+}
+
+#screen{
+    margin: 5px 10px;
+    width: 70%;
+    height: 60%;
+    border: var(--container-inside-border-color) solid 1px;
+    background-color: var(--background-screen);
+    padding: 15px;
+    border-radius: 20px 0px 0px 00px;
+    overflow: auto;
+    text-align: left;
+}
+#contactlist{
+    position: absolute;
+    right: 10px;
+    margin-top: 57px;
+    width: 20%;
+    height: 40%;
+    border: var(--container-inside-border-color) solid 1px;
+    background-color: var(--background-contactlist);
+    padding: 15px;
+    border-radius: 0px 20px 0px 00px;
+    z-index: 1;
+    overflow: auto;
+}
+#newusermsg::before{
+    color: var(--text-incont-color);
+    content: "Nieznajomi:";
+    position: relative;
+    top: -35px;
+}
+
+#newusermsg{
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    width: 20%;
+    height: 10%;
+    z-index: 1;
+    border: var(--container-inside-border-color) solid 1px;
+    background-color: var(--background-newusermsg);
+    padding: 15px;
+}
+#contactadd::before{
+    color: var(--text-incont-color);
+    content: "Dodaj Kontakt:";
+    position: relative;
+    top: -35px;
+}
+#contactadd{
+    position: absolute;
+    right: 10px;
+    bottom: 55px;
+    width: 20%;
+    height: 15%;
+    border: var(--container-inside-border-color) solid 1px;
+    background-color: var(--background-contactadd);
+    padding: 15px;
+    border-radius: 0px 0px 20px 0px;
+    z-index: 1;    
+}
+#cont input{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 30px;
+}
+#addName{
+    margin-top: -10px;
+    position: relative;
+    width: 100%;
+    height: 30px!important;
+}
+#addConBtn{
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 2rem;    
+}
+
+
+#screen span{
+    line-height: 1.2rem;
+}
+
+
+#cont textarea{
+    width: 72.5%;
+    height: 140px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 0px 0px 0px 20px;
+    resize: none;
+}
+
+
+#sendbtn{
+    margin-left: 35%;
+    width: 100px;
+    height: 30px;
+}
+
+#contlist{
+    text-decoration: none;
+    line-height: 1.3rem;
+}
+
+
+
+.contactUser{
+    color: var(--offline-user-color);
+    cursor: pointer;
+}
+.contactUserActive{
+    color: var(--online-user-color);
+}
+.contactUserSelected{
+    background-color: var(--selected-user-Bg);
+}
+.delcont{
+    position: absolute;
+    right: 20px;
+}
+.historyBTN{
+    position: absolute;
+    right: 40px;
+}
+
+.newMsg{
+    color: var(--newmsg-color);
+    text-decoration: double;
+}
+
+
+#newusermsg span{
+    cursor: pointer;
+}
+#settings{
+    margin-left:10px;
+    width: 24px;
+    height: 24px;
+    bottom:-5px
+}
+
+#settingsico{
+    width: 12px;
+    height: 12px;
+    
+}
+
+@media screen and (max-width: 1100px) and (min-width: 800px) {
+    #cont{
+        width: 750px;
+    }
+    #screen{
+        width: 67%;
+    }
+    #cont textarea{
+        width: 71%;
+        height: 155px;
+    }
+}
+@media screen and (max-width: 799px) and (min-width: 581px) {
+    #cont{
+        width: 540px;
+    }
+    #screen{
+        width: 63%;
+    }
+    #cont textarea{
+        width: 69%;
+        height: 155px;
+    }
+}
+
+
+
+@media screen and (max-width: 580px) {
+    #cont{
+        width: 390px;
+        height: 600px;
+    }
+    #screen{
+        width: 55%;
+        height: 55%;
+    }
+    #cont textarea{
+        width: 63%;
+    }
+    #contactadd::before{
+        font-size: 9px;
+    }
+    #contactadd{
+        height: 10%;
+    }
+    #newusermsg{
+        height: 7%;
+        top: 58%;
+    }
+    #addName{
+        margin-top: -15px;
+        height: 20px!important;
+    }
+    #addConBtn{
+        margin-top: 3px;
+        height: 1.3rem;    
+    }
+}

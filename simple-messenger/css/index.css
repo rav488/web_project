@@ -1,0 +1,46 @@
+body{
+    background-color:#333
+}
+#logo{
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    left: -83px;    
+    top: -107px;
+    transform: rotate(-20deg);
+}
+.box{
+    position: relative;
+    margin: 30vh auto;
+    border: 1px solid black;
+    background-color: #888888;
+    width: 250px;
+    padding:20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.box input{
+    margin-top: 15px;
+}
+.submitBtn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.hidde{
+    display: none;
+}
+.changeBtn{
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+#info{
+    font-weight: bold;
+    color: rgb(139, 10, 10);
+}

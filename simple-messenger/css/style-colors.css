@@ -1,0 +1,46 @@
+:root{
+    /*
+    color2 - tło
+    color3 - tło okna
+    color4 - ramka
+    color5 - inputy
+    */
+    /*blue*/
+    --bluepalet-color1: #000000;
+    --bluepalet-color2: #002541;
+    --bluepalet-color3: #003d63;
+    --bluepalet-color4: #009df5;
+    --bluepalet-color5: #d6ecff;
+    /*black*/
+    --blackpalet-color1: #000000;
+    --blackpalet-color2: #333;
+    --blackpalet-color3: #555;
+    --blackpalet-color4: rgb(58, 247, 58);
+    --blackpalet-color5: #ccc;
+    /*olive*/
+    --olivepalet-color1: #000000;
+    --olivepalet-color2:  #99a98f;
+    --olivepalet-color3: #c1d0b5;
+    --olivepalet-color4: #fff8de;
+    --olivepalet-color5: #d6e8db;
+    /*brown*/
+    --brownpalet-color1: #000000;
+    --brownpalet-color2:  #8d7b68;
+    --brownpalet-color3: #a4907c;
+    --brownpalet-color4: #f1dec9;
+    --brownpalet-color5: #c8b6a6;
+    
+    /*green*/
+    --greenpalet-color1: #000000;
+    --greenpalet-color2:  #263A29;
+    --greenpalet-color3: #41644A;
+    --greenpalet-color4: #E86A33;
+    --greenpalet-color5: #F2E3DB;
+
+    /*retro1*/
+    --retro1palet-color1: #000000;
+    --retro1palet-color2:  #002B5B;
+    --retro1palet-color3: #c9c1b5;
+    --retro1palet-color4: #EA5455;
+    --retro1palet-color5: #F9F5EB;
+}
